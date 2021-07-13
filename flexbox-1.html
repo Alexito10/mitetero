@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    body{
+        width: 80%;
+        margin: 0 auto;
+    }
+    img{
+        width: 300px;;
+    }
+    /* flex box */
+    article{
+        display:flex;
+        flex-wrap: wrap;
+        justify-content: center; /*se ponen en el centro*/
+        justify-content: space-between; /*se ponena los extremos repartiendo el margen interno*/
+        justify-content:space-around;/* se centran los elementos repartiendo los margenes exteriores*/
+    }
+    section{
+        flex-grow: 1;/* 1 es el indice y sirve para que cuando la ventana se hace pequeña el ultimo elemento se agranda*/
+    }
+    .sec-2{
+        order:3; /* al hacer la pantalla mas estrecha se cambia el orden de este elemento y le pone el 3*/
+    }
+    /* MEDIA QUERY*/
+    @media (max-width:550px){
+        body{
+            width: 100%;
+        }
+    }
+</style>
+    <!-- <script crossorigin src="https://unpkg.com/react@17/umd/react.development.js"></script></head>-->
+<body>
+   <header>
+       <h1>Introduccion a flexbox</h1>
+       <h2>Nivel 1</h2>
+       <p>flex box </p>
+   </header> 
+   <hr>
+   <div class="container">
+        <h2>Cursos</h2>
+        <article class="wrapper">
+            <section class="sec-1">
+                <img src="img/chupetero1.jpeg" alt="">
+                <h3>Cursos de fundamentos</h3>
+            </section>
+            <section class="sec-2">
+                <img src="img/chupetero1.jpeg" alt="">
+                <h3>Cursos de fundamentos</h3>
+            </section>
+            <section class="sec-3">
+                <img src="img/chupetero1.jpeg" alt="">
+                <h3>Cursos de fundamentos</h3>
+            </section>
+        </article>
+   </div>
+   <hr>
+   <footer>
+       <div>
+           <img src="" alt="">
+       </div>
+   </footer>
+</body>
+</html>
