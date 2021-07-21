@@ -1,0 +1,21 @@
+
+Curso de git comandos:
+
+git init -> Inicializar en git nuestro proyecto
+git status -> Ver el estado de los archivos de nuestro proyecto (git status -s)
+git add <nombreArchivo> -> Añadir archivos al seguimiento de git (area de ensallo)(git add . -> añadimos todo)
+git commit -m "texto descriptivo" -> Decir a git que tiene que subir cambios comprobando los archivos modificados y las lineas
+git config --global user.name "nombre"
+git config --global user.email "email"
+git log (git log -oneline)-> Muestra todos los commits que hayamos echo
+git checkout <nombreArchivo> -> Deshacer los cambios
+git reset HEAD <nombreArchivo> -> Sacamos del area de ensallo de git la version actual del archivo y nos quedamos con la anterior
+git rm <nombreArchivo> -> Borrar archivo
+git checkout <hash que devuelve el git log de un git commit que hayamos echo anteriormente> -> El estados del fichero del commit que queramos
+git branch -> Para ver las ramas que tenemos
+git checkout <nombreRama> -> Cambiarnos de una rama a otra
+git branch <nombreNuevaRama> <Opcional hash del un commit> -> Crear una nueva rama
+git merge <NombreRamaOrigen> -> Hay que posicionarse primero a la rama a la que queremos traernos los cambios  ejemplo "git branch master" y luego git merge app_ok
+git branch -m <nombreRama> <nuevoNombreRama> -> Modificar el nombre de la rama
+git branch -D <nombreRama> -> Eliminar una rama
+
