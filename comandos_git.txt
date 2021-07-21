@@ -18,4 +18,7 @@ git branch <nombreNuevaRama> <Opcional hash del un commit> -> Crear una nueva ra
 git merge <NombreRamaOrigen> -> Hay que posicionarse primero a la rama a la que queremos traernos los cambios  ejemplo "git branch master" y luego git merge app_ok
 git branch -m <nombreRama> <nuevoNombreRama> -> Modificar el nombre de la rama
 git branch -D <nombreRama> -> Eliminar una rama
+git remote add origin <https://github.com/NombreUsuario/NombreRepositorio.git ->Subir nuestro proyecto a un repositorio
+git push origin --all -> Subir todo el proyecto incluido las rama
+git push origin  <nombreRama> -> Subir una rama concreta
 
